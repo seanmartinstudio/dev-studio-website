@@ -41,13 +41,20 @@ body {
   font-family: var(--font-mono);
   background-color: var(--color-bg);
   color: var(--color-text);
-  padding: var(--spacing-lg);
 }
+
+/* Typography */
 
 h1, h2, h3, h4 {
   font-family: var(--font-sans);
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+    font-size: 10rem;
+    letter-spacing: -.5rem;
+    margin: 0;
 }
 
 h3 {
@@ -61,8 +68,20 @@ p, a {
   color: inherit;
 }
 
+span {
+    font-size: 10rem;
+}
+
+/* Elements */
+
+main {
+    padding: var(--spacing-md);
+}
+
+
 header {
     min-height: 75vh;
+    padding: var(--spacing-md);
 }
 
 section {
@@ -80,3 +99,22 @@ section {
     flex: 1;
     max-width: 80ch;
   }
+
+  footer {
+    min-height: 90vh;
+    /* justify-content: space-between; */
+    background-color: red;
+    color: var(--color-bg);
+    padding: var(--spacing-md);
+  }
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-container {
+    flex-direction: column;
+}
