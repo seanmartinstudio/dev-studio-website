@@ -1,0 +1,43 @@
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p, a {
+    font-family: 'IBM Plex Sans', monospace;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
