@@ -1,43 +1,59 @@
-/* Global CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* CSS Variables */
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Sans Mono', monospace;
+
+  --color-bg: #FBFBFB;
+  --color-text: #272727;
+  --color-accent: #0077ff;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  --ratio: 1.5;
+  --size-5: calc(var(--s-4) / var(--ratio));
+  --size-4: calc(var(--s-3) / var(--ratio));
+  --size-3: calc(var(--s-2) / var(--ratio));
+  --size-2: calc(var(--s-1) / var(--ratio));
+  --size-1: calc(var(--s0) / var(--ratio));
+  --size0: 1rem;
+  --size1: calc(var(--s0) * var(--ratio));
+  --size2: calc(var(--s1) * var(--ratio));
+  --size3: calc(var(--s2) * var(--ratio));
+  --size4: calc(var(--s3) * var(--ratio));
+  --size5: calc(var(--s4) * var(--ratio));
 }
 
-html {
-    font-size: 16px;
-    line-height: 1.5;
+/* Reset / Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: var(--font-mono);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--spacing-lg);
 }
 
-/* Typography */
 h1, h2, h3, h4 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    margin-bottom: 1rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
 }
 
 p, a {
-    font-family: 'IBM Plex Sans', monospace;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Utility Classes */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--size0);
+  margin-bottom: var(--spacing-md);
+  text-decoration: none;
+  color: inherit;
 }
