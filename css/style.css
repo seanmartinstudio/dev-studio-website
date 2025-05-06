@@ -102,19 +102,18 @@ section {
 
   footer {
     min-height: 90vh;
-    /* justify-content: space-between; */
     background-color: red;
     color: var(--color-bg);
     padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column; 
   }
 
 
 .footer-container {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
+    /* align-items: flex-end; */
+    flex-wrap: wrap;
 
-}
-
-.contact-container {
-    flex-direction: column;
-}
