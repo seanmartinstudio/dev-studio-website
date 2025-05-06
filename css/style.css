@@ -50,10 +50,33 @@ h1, h2, h3, h4 {
   margin-bottom: var(--spacing-sm);
 }
 
+h3 {
+    font-size: 2rem;
+}
 p, a {
   font-family: var(--font-mono);
-  font-size: var(--size0);
+  font-size: 2rem;
   margin-bottom: var(--spacing-md);
   text-decoration: none;
   color: inherit;
 }
+
+header {
+    min-height: 75vh;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75vh;
+    border-top: 1px solid var(--color-text);
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    max-width: 80ch;
+  }
