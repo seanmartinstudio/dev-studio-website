@@ -89,6 +89,7 @@ section {
     justify-content: space-between;
     min-height: 75vh;
     border-top: 1px solid var(--color-text);
+    padding-top: var(  --spacing-sm);
 }
 
 .left {
@@ -107,6 +108,7 @@ section {
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column; 
+    flex-wrap: wrap;
   }
 
 
@@ -114,6 +116,9 @@ section {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    /* align-items: flex-end; */
     flex-wrap: wrap;
+}
 
+.footer-container p {
+    font-size: var(--size0);
+}
