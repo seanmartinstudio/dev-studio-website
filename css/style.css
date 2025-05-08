@@ -53,16 +53,17 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 10rem;
-    letter-spacing: -.3rem;
+    letter-spacing: -.5rem;
     margin: 0;
 }
+
 
 h3 {
     font-size: 2rem;
 }
 p, a {
   font-family: var(--font-mono);
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: var(--spacing-md);
   text-decoration: none;
   color: inherit;
@@ -70,6 +71,7 @@ p, a {
 
 span {
     font-size: 10rem;
+    letter-spacing: -.5rem;
 }
 
 /* Elements */
@@ -88,23 +90,34 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 75vh;
+    min-height: 50vh;
     border-top: 1px solid var(--color-text);
     padding-top: var( --spacing-sm);
 }
 
+.design-tenents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  /* max-width: 80ch;  */
+
+}
+
+.design-tenents p {
+  font-size: var(--size1);
+}
+
 .category-copy {
-    max-width: 70ch;
+    max-width: 80ch;
   }
 
   footer {
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: red;
     color: var(--color-bg);
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column; 
-    flex-wrap: wrap;
   }
 
 
@@ -117,4 +130,17 @@ section {
 
 .footer-container p {
     font-size: var(--size0);
+}
+
+
+.one {
+  max-width: 25rem;
+}
+
+.two {
+  max-width: 25rem;
+}
+
+.three {
+  max-width: 25rem;
 }
