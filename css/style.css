@@ -110,7 +110,6 @@ section {
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column; 
-    font-size: 1.5rem;
   }
 
 
@@ -121,9 +120,11 @@ section {
     flex-wrap: wrap;
 }
 
+
 .footer-container p {
-    font-size: var(--size0);
+    font-size: 1rem;
 }
+
 
 
 .one {
@@ -136,4 +137,13 @@ section {
 
 .three {
     max-width: 25rem;
+}
+
+
+/* Mobile Break Point */
+@media (max-width: 767px) {
+  .footer-container {
+    display: block;
+    margin-top: auto;
+}
 }
