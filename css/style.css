@@ -74,10 +74,23 @@ main {
 }
 
 header {
-    min-height: 75vh;
+    min-height: 100vh;
     padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
 }
 
+.hero-image-container {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 30px;
+}
 section {
     display: flex;
     flex-wrap: wrap;
@@ -145,5 +158,12 @@ section {
   .footer-container {
     display: block;
     margin-top: auto;
+}
+}
+
+
+@media (max-width: 767px) {
+  .hero-image-container {
+    margin-left: inherit;
 }
 }
