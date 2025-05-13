@@ -125,7 +125,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 60vh;
+    min-height: 50vh;
     border-top: 1px solid var(--color-text);
     padding-top: var( --spacing-sm);
 }
