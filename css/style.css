@@ -81,14 +81,10 @@ main {
 header {
     min-height: 100vh;
     padding: var(--spacing-md);
-     color: var(--color-bg);;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  background-image: url("/assets/phone-rock.png");
-  background-size: cover;
-  background-position: center;
+    gap: 2.5rem;
+
 }
 
 /* .title-container {
@@ -117,23 +113,18 @@ article {
     line-height: 0.9;
 }
 
+img {
+  border-radius: 1rem;
+    max-width: 100%;
+  width: 100%;
+  height: auto;
+}
 
 .hero-image-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: auto;
+  border-radius: 1rem;
 }
 
 
-img {
-  /* width: 100%; */
-  /* max-width: 600px; */
-  height: 100vh;
-  /* border-left: auto; */
-  /* border-radius: 30px; */
-}
 section {
     display: flex;
     flex-wrap: wrap;
@@ -221,15 +212,12 @@ section {
 }
 }
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   header {
-      flex-direction: column;
-  background-image: url("/assets/test-phone-mock.png");
-  background-size: cover;
-  background-position: center;
+  min-height: 40vh;
+  }
+  article {
+    min-height: 50vh;
   }
 
-  img {
-    display: none;
-  }
-} */
+}
