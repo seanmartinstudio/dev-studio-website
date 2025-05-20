@@ -125,7 +125,7 @@ img {
   border-radius: 1rem;
   max-width: 100%; 
   width: 100%;      /* or auto depending on layout */
-  height: 100vh;       /* fills viewport height */
+  height: 90vh;       /* fills viewport height */
   object-fit: cover;   /* maintains aspect ratio and fills */
 }
 
