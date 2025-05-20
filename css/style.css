@@ -98,7 +98,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 110vh;
+  min-height: 130vh;
   
 }
 
@@ -113,12 +113,23 @@ article {
     line-height: 0.9;
 }
 
-img {
+/* img {
   border-radius: 1rem;
-    max-width: 100%;
+  max-width: 100%;
   width: 100%;
   height: auto;
+} */
+
+
+img {
+  border-radius: 1rem;
+  max-width: 100%; 
+  width: 100%;      /* or auto depending on layout */
+  height: 100vh;       /* fills viewport height */
+  object-fit: cover;   /* maintains aspect ratio and fills */
 }
+
+
 
 .hero-image-container {
   border-radius: 1rem;
@@ -153,7 +164,10 @@ section {
 
   footer {
     min-height: 100vh;
-    background-color: red;
+    /* background-color: red; */
+    /* background-color: #058c02; */
+    /* background-color: #f2d9b2; */
+    background-color: #a2c6d8;
     color: var(--color-bg);
     padding: var(--spacing-md);
     display: flex;
@@ -219,5 +233,13 @@ section {
   article {
     min-height: 50vh;
   }
+}
 
+@media (max-width: 767px) {
+img {
+  border-radius: 1rem;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
 }
