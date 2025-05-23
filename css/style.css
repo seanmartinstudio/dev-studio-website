@@ -79,12 +79,15 @@ main {
 }
 
 header {
-    min-height: 100vh;
+    min-height: 120vh;
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-
+    background-image: url("/assets/cult-of-joy-phone-mock.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--color-bg);
 }
 
 /* .title-container {
@@ -99,7 +102,6 @@ article {
   flex-direction: column;
   justify-content: center;
   min-height: 130vh;
-  
 }
 
 /* .article-copy-container {
@@ -121,14 +123,25 @@ article {
 } */
 
 
-img {
+/* img {
   border-radius: 1rem;
   max-width: 100%; 
-  width: 100%;      /* or auto depending on layout */
-  height: 90vh;       /* fills viewport height */
-  object-fit: cover;   /* maintains aspect ratio and fills */
+  width: 100%;     
+  height: 90vh;       
+  object-fit: cover;  
 }
+ */
 
+ img {
+  border-radius: 1rem;
+  max-width: 100%;
+  width: auto;
+  height: 60vh;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 .hero-image-container {
@@ -228,7 +241,8 @@ section {
 
 @media (max-width: 767px) {
   header {
-  min-height: 40vh;
+  min-height: 100vh;
+  background-position: center;
   }
   article {
     min-height: 100vh;
