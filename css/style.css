@@ -84,7 +84,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    background-image: url("/assets/cult-of-joy-phone-mock.png");
+    background-image: url("/assets/cult-of-joy-phone-mock.webp");
     background-size: cover;
     background-position: center;
     color: var(--color-bg);
