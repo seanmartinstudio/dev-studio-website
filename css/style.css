@@ -166,7 +166,6 @@ section {
 }
 }
 
-
 @media (max-width: 767px) {
   .hero-image-container {
     margin-left: inherit;
@@ -184,18 +183,12 @@ section {
 @media (max-width: 767px) {
   header {
   min-height: 100vh;
-  background-position: center;
+  /* background-position: center; */
   }
   article {
     min-height: 100vh;
   }
 }
-
-/* @media (max-width: 767px) {
-img {
-  height: 80vh;
-}
-} */
 
 @media (max-width: 767px) {
 .image-gallery {
