@@ -175,12 +175,12 @@ section {
 
 
 /* Mobile Break Point */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .footer-container {
     display: block;
     margin-top: auto;
 }
-}
+} */
 
 @media (max-width: 767px) {
   .hero-image-container {

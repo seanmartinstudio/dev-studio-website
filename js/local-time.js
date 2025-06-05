@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const timeElement = document.getElementById('local-time');
     if (timeElement) {
-      timeElement.textContent = `Santa Monica, CA: ${timeString}`;
+      timeElement.textContent = `Santa Monica, CA ${timeString}`;
     }
   }
 
