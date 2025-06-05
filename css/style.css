@@ -182,11 +182,11 @@ section {
 }
 } */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .hero-image-container {
     margin-left: inherit;
 }
-}
+} */
 
 /* @media (max-width: 767px) {
   section {
@@ -204,19 +204,18 @@ section {
 
 @media (max-width: 767px) {
   header {
-  min-height: 100vh;
-  /* background-position: center; */
+  min-height: 100svh;
   }
   article {
     min-height: 100vh;
   }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 .image-gallery {
   display: inline;
 }
 .image-gallery img {
     width: 100%
 }
-}
+} */
