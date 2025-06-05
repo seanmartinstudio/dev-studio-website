@@ -169,6 +169,11 @@ section {
 }
 
 
+.footer-container a {
+    font-size: 1rem;
+}
+
+
 /* Mobile Break Point */
 @media (max-width: 767px) {
   .footer-container {
