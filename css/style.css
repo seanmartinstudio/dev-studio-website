@@ -84,14 +84,13 @@ main {
 }
 
 header {
-    min-height: 125vh;
+    min-height: 125svh;
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     background-image: url("/assets/Eternal-September-Crew-Neck.webp");
     background-size: cover;
-    /* background-position: center; */
     background-position: center 25%;
     background-attachment: scroll;
     color: var(--color-bg);
@@ -205,7 +204,7 @@ section {
 
 @media (max-width: 767px) {
   header {
-  min-height: 100vh;
+  min-height: 100svh;
   }
   article {
     min-height: 100vh;
