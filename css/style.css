@@ -183,12 +183,18 @@ section {
 }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
+} */
+
+@media (max-width: 767px) {
+ .category-copy {
+    max-width: none;
+  }
 }
 
 @media (max-width: 767px) {
