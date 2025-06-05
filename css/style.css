@@ -52,21 +52,26 @@ h1, h4 {
 }
 
 h2 {
-   font-size: clamp(1.5rem, 10vw, 8rem);
+   font-size: clamp(1.5rem, 10vw, 20rem);
    color: var(--color-text);
 }
 
 h3 {
     /* font-size: 2rem; */
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 }
 
-p, a {
+p, a, li {
   font-family: var(--font-sans-serif);
   font-size: clamp(1.3rem, 2vw, 2rem);
   margin-bottom: var(--spacing-md);
   color: inherit;
 }
+
+ul {
+  list-style: none;   /* Removes bullets */
+}
+
 
 .no-break {
   white-space: nowrap;
@@ -79,12 +84,12 @@ main {
 }
 
 header {
-    min-height: 120vh;
+    min-height: 125vh;
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    background-image: url("/assets/COJ-Girl-Crew-Light-Black.webp");
+    background-image: url("/assets/Eternal-September-Crew-Neck.webp");
     background-size: cover;
     /* background-position: center; */
     background-position: center 25%;
@@ -105,18 +110,24 @@ header {
 }
 
 
-section {
+/* section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* min-height: 50vh; */
     border-top: 1px solid var(--color-text);
     padding-top: var( --spacing-sm);
     margin-top: var(--spacing-lg);
+} */
+
+section {
+    border-top: 1px solid var(--color-text);
+    padding-top: var( --spacing-md);
+    margin-top: var(--spacing-lg);
 }
 
+
 .category-copy {
-    max-width: 80ch;
+    max-width: 90ch;
   }
 
 .image-gallery {
