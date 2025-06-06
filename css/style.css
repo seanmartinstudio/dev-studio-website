@@ -47,8 +47,8 @@ h1, h4 {
 }
 
 h2 {
-   font-size: clamp(1.5rem, 10vw, 20rem);
-   color: var(--color-text);
+  font-size: clamp(1.5rem, 10vw, 20rem);
+  color: var(--color-text);
 }
 
 h3 {
