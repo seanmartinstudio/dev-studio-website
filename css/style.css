@@ -204,7 +204,8 @@ section {
 
 @media (max-width: 767px) {
   header {
-  min-height: 100svh;
+  /* min-height: 100lvh; */
+  min-height: 800px;
   }
   article {
     min-height: 100vh;
