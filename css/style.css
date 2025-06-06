@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 /* CSS Variables */
+
 :root {
   --font-heading: 'Inter', sans-serif;
    --font-sans-serif: 'IBM Plex Sans', sans-serif;
@@ -18,7 +18,8 @@
   --spacing-lg: 2rem;
 }
 
-/* Reset / Base Styles */
+/* Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -38,12 +39,6 @@ h1, h2, h3, h4 {
   font-weight: 900;
   margin-bottom: var(--spacing-sm);
 }
-
-/* h1 {
-    font-size: 10rem;
-    letter-spacing: -0.5rem;
-    margin: 0;
-} */
 
 h1, h4 {
   font-size: clamp(1.5rem, 10vw, 10rem);
@@ -69,9 +64,8 @@ p, a, li {
 }
 
 ul {
-  list-style: none;   /* Removes bullets */
+  list-style: none;
 }
-
 
 .no-break {
   white-space: nowrap;
@@ -84,16 +78,16 @@ main {
 }
 
 header {
-    min-height: 125svh;
-    padding: var(--spacing-md);
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    background-image: url("/assets/Eternal-September-Crew-Neck.webp");
-    background-size: cover;
-    background-position: center 25%;
-    background-attachment: scroll;
-    color: var(--color-bg);
+  min-height: 125svh;
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-image: url("/assets/Eternal-September-Crew-Neck.webp");
+  background-size: cover;
+  background-position: center 25%;
+  background-attachment: scroll;
+  color: var(--color-bg);
 }
 
 .sub-heading {
@@ -109,7 +103,7 @@ header {
     line-height: 0.9;
 }
 
-
+/* Use if flexing sections again */
 /* section {
     display: flex;
     flex-wrap: wrap;
@@ -124,7 +118,6 @@ section {
     padding-top: var( --spacing-md);
     margin-top: var(--spacing-lg);
 }
-
 
 .category-copy {
     max-width: 90ch;
@@ -155,7 +148,6 @@ section {
     margin-top: var(--spacing-lg);
   }
 
-
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -163,31 +155,28 @@ section {
     flex-wrap: wrap;
 }
 
-
 .footer-container p {
     font-size: 1rem;
 }
-
 
 .footer-container a {
     font-size: 1rem;
 }
 
+/* Mobile Break Points */
 
-/* Mobile Break Point */
-/* @media (max-width: 767px) {
-  .footer-container {
-    display: block;
-    margin-top: auto;
+@media (max-width: 767px) {
+  header {
+  /* min-height: 100lvh; */
+  min-height: 750px;
+  background-position: center 40%;
+  }
+  article {
+    min-height: 100vh;
+  }
 }
-} */
 
-/* @media (max-width: 767px) {
-  .hero-image-container {
-    margin-left: inherit;
-}
-} */
-
+/* Use if flexing sections again */
 /* @media (max-width: 767px) {
   section {
     display: flex;
@@ -201,23 +190,3 @@ section {
     max-width: none;
   }
 }
-
-@media (max-width: 767px) {
-  header {
-  /* min-height: 100lvh; */
-  min-height: 750px;
-  background-position: center 40%;
-  }
-  article {
-    min-height: 100vh;
-  }
-}
-
-/* @media (max-width: 767px) {
-.image-gallery {
-  display: inline;
-}
-.image-gallery img {
-    width: 100%
-}
-} */
