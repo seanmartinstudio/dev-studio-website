@@ -34,10 +34,10 @@ body {
 
 /* Typography */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4,h5 {
   font-family: var(--font-heading);
   font-weight: 900;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 h1, h4 {
@@ -53,8 +53,13 @@ h2 {
 
 h3 {
     /* font-size: 2rem; */
+    font-size: clamp(1.75rem, 3vw, 3rem);
+}
+
+h5 {
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 }
+
 
 p, a, li {
   font-family: var(--font-sans-serif);
@@ -78,14 +83,14 @@ main {
 }
 
 header {
-  min-height: 125svh;
+  min-height: 150svh;
   padding: var(--spacing-md);
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   background-image: url("/assets/Eternal-September-Crew-Neck.webp");
   background-size: cover;
-  background-position: center 25%;
+  background-position: center 10%;
   background-attachment: scroll;
   color: var(--color-bg);
 }
@@ -188,5 +193,25 @@ section {
 @media (max-width: 767px) {
  .category-copy {
     max-width: none;
+  }
+}
+
+
+/* Test Below */
+
+
+.services-category {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.services-category p {
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+ .services-category {
+    display: inline;
   }
 }
