@@ -6,11 +6,12 @@ gsap.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
 // Scramble <h1> on page load
 gsap.to("h1", {duration: 1, ScrambleTextPlugin: "Eternal September"});//or customize things:
 gsap.to("h1", {
-  duration: 2, 
+  duration: 3.2, 
   scrambleText: {
     text: "Eternal September", 
     chars: "XO", 
-    speed: 1, 
+    revealDelay: 1.5,
+    speed: 0.5, 
     newClass: "myClass"
   }
 });
