@@ -1,19 +1,19 @@
 // scroll-fade.js
 
 // Register the plugin
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
 
 // Scramble <h1> on page load
-// gsap.to("h1", {duration: 1, scrambleText: "Eternal September"});//or customize things:
-// gsap.to("h1", {
-//   duration: 2, 
-//   scrambleText: {
-//     text: "Eternal September", 
-//     chars: "XO", 
-//     speed: 1, 
-//     newClass: "myClass"
-//   }
-// });
+gsap.to("h1", {duration: 1, ScrambleTextPlugin: "Eternal September"});//or customize things:
+gsap.to("h1", {
+  duration: 2, 
+  scrambleText: {
+    text: "Eternal September", 
+    chars: "XO", 
+    speed: 1, 
+    newClass: "myClass"
+  }
+});
 
 // Scroll trigger fade in <artcile>
 gsap.utils.toArray("article").forEach((section) => {
