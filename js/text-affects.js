@@ -1,7 +1,7 @@
 // scroll-fade.js
 
 // Register the plugin
-gsap.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 // Scramble <h1> on page load
 // gsap.to("h1", {duration: 1, scrambleText: "Eternal September"});//or customize things:
