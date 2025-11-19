@@ -9,7 +9,7 @@ gsap.to("h1", {
   duration: 3.2, 
   scrambleText: {
     text: "Eternal September", 
-    chars: "XO", 
+    chars: "█▓▒░▚▞▙▛▜▟#*+=-<>[]", 
     revealDelay: 1.5,
     speed: 0.5, 
     newClass: "myClass"

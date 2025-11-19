@@ -95,6 +95,12 @@ header {
   color: var(--color-bg);
 }
 
+.text-box {
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
 .sub-heading {
   display: flex;
   flex-direction: column;
