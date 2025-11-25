@@ -4,7 +4,7 @@
 gsap.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
 
 // Scramble <h1> on page load
-gsap.to("h1", {duration: 1, ScrambleTextPlugin: "Eternal September"});//or customize things:
+// gsap.to("h1", {duration: 1, ScrambleTextPlugin: "Eternal September"});
 gsap.to("h1", {
   duration: 3.2, 
   scrambleText: {
