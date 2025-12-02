@@ -123,6 +123,10 @@ header {
     line-height: 0.9;
 }
 
+.hero {
+    opacity: 0; /* start hidden, will fade in on load */
+}
+
 /* Use if flexing sections again */
 /* section {
     display: flex;
