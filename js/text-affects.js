@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     // Optionally fade in the hero
     gsap.fromTo('.hero', 
         { opacity: 0 }, 
-        { opacity: 1, duration: 1.2, ease: "power2.out" }
+        { opacity: 1, duration: 0.5, ease: "power2.out" }
     );
 
     // Scramble H1 text
