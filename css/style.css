@@ -254,6 +254,10 @@ section {
   article {
     min-height: 100vh;
   }
+
+  .footer-container {
+    flex-direction: column;
+  }
 }
 
 /* Use if flexing sections again */
